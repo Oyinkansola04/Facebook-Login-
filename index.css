@@ -117,8 +117,8 @@ button.new_acct{
     }
     .logo{
         text-align: center;
+        display: inline-block;
         margin: auto;
-        margin-top: 0px;
         margin-bottom: 50px;
     }
     .logo h2{
