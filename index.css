@@ -113,11 +113,13 @@ button.new_acct{
     .container{
         flex-direction: column;
         padding:0px 30px;
+        margin-top: 10px;
+        min-height: 80vh;
     }
     .logo{
         text-align: center;
         margin: auto;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
     .logo h2{
         font-size: 50px;
