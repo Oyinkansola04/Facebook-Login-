@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: rgb(243, 243, 243);
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding:0px 60px;
+}
+
+.logo{
+    margin-right: 170px;
+    margin-top: -70px;
+}
+
+.logo h2{
+    font-size: 65px;
+    margin-bottom: 5px;
+    color: #0866ff;
+}
+
+.logo p{
+    font-size: 25px;
+    line-height: 30px;
+    
+}
+
+.info{
+    width: 33%;
+}
+
+.cont2{
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 25px;
+    border-radius: 7px;
+    box-shadow: 10px 10px 10px -7px #0000001a, -10px -10px 10px -7px #0000001a;
+}
+
+.cont2 input{
+    width: 100%;
+    padding: 15px 15px;
+    border: 1px solid #f0f0f0;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    outline: none;
+}
+
+.cont2 input:focus{
+    border: 3px solid #0866ff;
+}
+
+.cont2 button{
+    width: 100%;
+    cursor: pointer;
+}
+
+button.login{
+    padding: 15px 0px;
+    margin-top: 5px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    background-color: #0866ff;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+button.forgotten_password{
+    padding: 10px 0px;
+    font-size: 14px;
+    color: #0866ff;
+    border: 1px solid transparent;
+    background-color: white;
+    font-weight: 600;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 18px;
+    margin-bottom: 25px;
+}
+
+button.new_acct{
+    width: 195px;
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+    background-color: #42b72a;
+    padding: 15px 15px;
+    border-radius: 5px;
+    border: none;
+    margin: auto;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.info p{
+    font-size: 14px;
+    text-align: center;
+}
+
+@media (max-width:600px){
+    .container{
+        flex-direction: column;
+    }
+    .logo{
+        text-align: center;
+        margin: auto;
+    }
+    .logo h2{
+        font-size: 50px;
+    }
+    
+    .logo p{
+        font-size: 20px;
+    }
+    
+    .info{
+        width: 100%;
+    }
+}
