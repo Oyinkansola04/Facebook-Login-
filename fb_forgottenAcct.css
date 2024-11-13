@@ -173,3 +173,41 @@ button.cancel{
 }
 
 }
+
+@media (max-width:380px){
+    .container h2{
+        font-size: 16px;
+    }
+
+    .container input{
+        width: 60px;
+        font-size: 11px;
+    }
+.container button{
+    padding: 6px;
+    font-size: 11px;
+}
+
+.container a{
+    font-size: 10px;   
+}
+}
+
+@media (max-width:320px){
+    .container h2{
+        font-size: 15px;
+    }
+
+    .container input{
+        width: 50px;
+        font-size: 11px;
+    }
+.container button{
+    padding: 5px;
+    font-size: 8px;
+}
+
+.container a{
+    font-size: 8px;   
+}   
+}
