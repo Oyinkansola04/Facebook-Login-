@@ -188,15 +188,15 @@ form input{
 
 @media (max-width:430px){
     .conta{
-        width: 400px;
+        width: 400px; 
     }
     .second-base{
         padding: 0px 10px;
     }    
     form input{
-        font-size: 15px;
+        font-size: 14px;
         padding: 10px 13px;
-        width: 185px;
+        width: 160px;
         margin-bottom: 15px;
     }
     .birth select{
@@ -205,6 +205,10 @@ form input{
     .sign-up button{
         padding: 8px 65px;
         font-size: 15px;
+    }
+    .conta{
+        width: 400px;
+        margin:  0px 30px 30px 30px;
     }
 }
 
@@ -215,7 +219,7 @@ form input{
     }
     form input{
         font-size: 15px;
-        width: 160px;
+        width: 140px;
     }
     .conta .logo{
         font-size: 55px;
@@ -223,19 +227,69 @@ form input{
 }
 
 
-@media (max-width:320px){
+@media (max-width:360px){
     .conta{
-        width: 300px;
+        width: 350px;
+        margin:  0px 30px 30px 30px;
     }
     form input{
-        font-size: 13px;
-        width: 135px;
-    }
-    .info div{
-        font-size: 14px;
+        font-size: 12px;
+        width: 117px;
     }    
     .conta .logo{
         font-size: 45px;
         margin-bottom: 15px;
     }
+    .header h2{
+        font-size: 24px;
+    }
+    .header p{
+        font-size: 14px;
+    }
+    .birth select{
+        width: 100%;
+        padding: 8px 5px;
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+    .info div{
+        width: 100%;
+        padding: 10px 6px;
+        font-size: 13px;
+    }
+    
+    .info #female, #male{
+        margin-right: 7px;
+    }
+    
+    .email{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    .email input{
+        padding: 10px 6px;
+        font-size: 13px;
+    }
+    
+    .footer p{
+        font-size: 13px;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .sign-up{
+        text-align: center;
+        margin-top: 25px;
+    }
+    
+    .sign-up button{
+        padding: 10px 60px;
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    .sign-up a{
+        font-size: 16px;
+    }
+     
 }

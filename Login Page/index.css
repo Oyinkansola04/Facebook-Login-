@@ -6,21 +6,26 @@
 }
 
 body{
-    background-color: rgb(243, 243, 243);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 100vh;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
-    padding: 0px 140px;
+    padding: 0px 11%;
+}
+
+.box{
+    flex: 0 1 50%;
 }
 
 .logo{
-    width: 67%;
-    margin-top: -70px;
+    margin-top: 90px; 
 }
 
 .logo h2{
@@ -32,14 +37,13 @@ body{
 .logo p{
     font-size: 25px;
     line-height: 30px;
-    width: 80%;
 }
 
-.info{
-    width: 40%;
+.bx{
+    padding-left: 13%;
 }
 
-.cont2{
+.input_box{
     background-color: white;
     padding: 15px;
     margin-bottom: 25px;
@@ -47,7 +51,7 @@ body{
     box-shadow: 10px 10px 10px -7px #0000001a, -10px -10px 10px -7px #0000001a;
 }
 
-.cont2 input{
+.input_box input{
     width: 100%;
     padding: 15px 15px;
     border: 1px solid #f0f0f0;
@@ -57,11 +61,11 @@ body{
     outline: none;
 }
 
-.cont2 input:focus{
+.input_box input:focus{
     border: 3px solid #0866ff;
 }
 
-.cont2 button{
+.input_box button{
     width: 100%;
     cursor: pointer;
 }
@@ -78,7 +82,12 @@ button.login{
     margin-bottom: 5px;
 }
 
-button.forgotten_password{
+button.login a{
+    text-decoration: none;
+    color: #fff;
+}
+
+button.forgotten{
     padding: 10px 0px;
     font-size: 14px;
     color: #0866ff;
@@ -88,6 +97,11 @@ button.forgotten_password{
     border-bottom: 2px solid #f0f0f0;
     padding-bottom: 18px;
     margin-bottom: 25px;
+}
+
+button.forgotten a{
+    text-decoration: none;
+    color: #0866ff;
 }
 
 button.forgotten_password a{
@@ -114,32 +128,36 @@ button.new_acct a{
     color: #fff;
 }
 
-.info p{
+.container .info{
     font-size: 14px;
     text-align: center;
 }
 
-@media (max-width:1024px){
-    .container{
-        padding: 0px 50px;
-    }
+.info a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
 }
-@media (max-width:768px){
-    .logo{
-        width: 50%;
-    }
 
-    .info{
-        width: 45%;
-    }
+@media (max-width: 1024px){
+ 
+.container{
+    padding: 0px 6%;
+}   
+.bx{
+    padding-left:10%;
+}
+}
+
+@media (max-width: 768px){
     .logo h2{
         font-size: 55px;
     }
-    .logo p{
+    .logo span{
         font-size: 18px;
         line-height: 25px;
     }
-    .cont2 input{
+    .input_box input{
         padding: 10px;
         font-size: 15px;
     }
@@ -159,46 +177,61 @@ button.new_acct a{
         padding: 12px 15px;
         margin-bottom: 12px;
     }
-    .info p{
-        font-size: 12px;
+    .container .info{
+        font-size: 11px;
     }
-    
 }
-
-
 
 @media (max-width:430px){
     .container{
+        padding: 0px 10%;
         flex-direction: column;
-        padding: 90px 20px;
-        height: 0vh;
     }
-    
-    .logo{
-        width: 100%;
+    .box{
+        flex: 0 1 100%;
+    }   
+    .box.logo{
+        margin: 0px  0px 20px;
+    }
+    .box.logo h2{
+        font-size: 50px;
         text-align: center;
     }
-    .logo p{
-    width: 100%;
+    .box.logo p{
+        text-align: center;
+        font-size: 18px;
+        line-height: 25px;
     }
-    .info{
-        width: 100%;
+    .bx{
+        padding-left: 0;
+    }
+    .container .info{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 380px){
+    .box.logo p{
+        font-size: 17px;
+    }   
+    .container .info{
+        font-size: 12px;
     }
 }
 
 @media (max-width:320px){
-    .logo{
-        margin-top: 50px;
-    }
-
-    .logo p{
-        margin-bottom: 20px;
-    }
     .container{
-        padding: 0px 20px;
-        height: 0vh;
+        padding: 0px 7%;
     }
-    .info p{
-        margin-bottom: 30px;
+    .box.logo h2{
+        font-size: 45px;
+        margin-bottom: 0px;
     }
+    .box.logo p{
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .container .info{
+        font-size: 11px;
+    }   
 }

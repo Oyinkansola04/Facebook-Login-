@@ -130,7 +130,7 @@ button.cancel{
     background-color: #ccd0d5;
 }
 
-@media (max-width:768px){
+@media (max-width:790px){
     .container input{
         width: 160px;
     }
@@ -146,7 +146,7 @@ button.cancel{
     
 }
 
-@media (max-width:430px){
+@media (max-width: 730px),(max-width:430px){
     .box_part{
         padding: 20px;
     }
@@ -160,6 +160,8 @@ button.cancel{
     .container input{
         width: 80px;
         font-size: 11px;
+        padding: 6px;
+        border-radius: 5px;
     }
 .container button{
     padding: 6px;
@@ -172,42 +174,95 @@ button.cancel{
     text-decoration: none;
 }
 
+.box_part{
+    height:50vh;
 }
 
-@media (max-width:380px){
-    .container h2{
-        font-size: 16px;
-    }
+}
 
+@media (max-width: 420px), (max-width:380px){
     .container input{
-        width: 60px;
-        font-size: 11px;
+        width: 70px;
+        font-size: 8px;
+        padding: 6px;
+        border-radius: 3px;
     }
-.container button{
-    padding: 6px;
-    font-size: 11px;
-}
-
-.container a{
-    font-size: 10px;   
-}
-}
-
-@media (max-width:320px){
-    .container h2{
+    .container button{
+        border-radius: 3px;
+        font-size: 8px;
+    }
+    .container a{
+        font-size: 8px;
+    }
+    .box{
+        padding: 12px 0px;
+    }
+    
+    .box .logo{
+        padding-left: 10px;
+        padding-bottom: 12px;
+    }
+    .logo h2{
         font-size: 15px;
     }
-
-    .container input{
-        width: 50px;
-        font-size: 11px;
+    .box .info{
+        padding: 20px;
     }
-.container button{
-    padding: 5px;
-    font-size: 8px;
+    
+    .info p{
+        font-size: 15px;
+        margin-bottom: 15px;
+        line-height: 23px;
+    }
+    
+    .info input{
+        padding: 10px;
+        font-size: 15px;    
+    }
+    
+    .box .btn{
+        padding: 12px 12px 0px 12px;
+        text-align: right;
+    }
+    
+    .btn button{
+        padding: 8px 15px;
+        font-size: 13px;
+        border-radius: 5px;
+    }
+    .box_part{
+        height:50vh;
+    }
 }
 
-.container a{
-    font-size: 8px;   
-}   
+@media (max-width: 360px), (max-width:330px) {
+    .container h2{
+        font-size: 13px;
+    }
+    .container input{
+        width: 60px;
+        font-size: 7px;
+        padding: 4px;
+        margin-right: 2px;
+    }
+    .container button{
+        padding: 4px;
+        font-size: 7px;
+    }
+    .container a{
+        font-size: 7px;
+    }
+    .info p{
+        font-size: 12px;
+        margin-bottom: 15px;
+        line-height: 20px;
+    } 
+    .info input{
+        padding: 8px;
+        font-size: 13px;    
+    }
+    .btn button{
+        padding: 7px 12px;
+        font-size: 12px;
+    }
 }
